@@ -1,23 +1,25 @@
-# Roadmap
+# AIOS Roadmap
 
-## Now
+The canonical roadmap lives in [docs/ROADMAP.md](docs/ROADMAP.md).
 
-- Simplify AIOS navigation and labels.
-- Preserve Hermes, Browser, Memory, Obsidian, entity graph, projects, agents, Activity, and voice systems.
-- Add Codex, Content Studio, GoHighLevel, and Automations sections.
-- Professionalize repository documentation.
+## Current Focus
 
-## Next
+- Professionalize the repository and documentation.
+- Keep AIOS local-first and truthful about runtime status.
+- Preserve Hermes, Browser Operations, Memory Nexus, Entity Graph, Obsidian, Telegram concepts, Guardians, Activity, Projects, and existing integrations.
 
-- Add durable Codex task recording from actual Codex sessions.
-- Add project detail pages with linked tasks, milestones, browser missions, Codex logs, Obsidian notes, and memory relationships.
-- Add screenshot placeholders after Playwright visual verification.
-- Improve Memory search and relationship filtering.
+## Near-Term Milestones
 
-## Later
+- Durable project detail pages.
+- Real Codex work logging.
+- Browser mission templates and stronger project links.
+- Memory search and relationship review.
+- Verified screenshot set for README and docs.
 
-- Verify n8n runtime and add safe automation status checks.
-- Add GoHighLevel API integration after credentials and scope are configured.
-- Add YouTube publishing only after explicit API integration.
-- Add cloud 24/7 runtime.
-- Add live browser streaming through a real streaming mechanism.
+## Future Milestones
+
+- Verified n8n automation runtime.
+- GoHighLevel integration.
+- YouTube publishing integration.
+- VPS deployment.
+- Safe autonomous operation.

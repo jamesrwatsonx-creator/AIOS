@@ -1,21 +1,60 @@
-# Contributing
+# Contributing To AIOS
 
-AIOS is local-first. Contributions should preserve existing working systems and avoid pretending future integrations are complete.
+AIOS is an operator dashboard with several preserved core systems. Contributions should improve clarity, reliability, or capability without removing working local behavior.
 
-## Rules
+## Preserve Core Systems
 
-- Preserve Hermes, Browser Operations, Memory, Obsidian persistence, entity graph, Projects, Agents, Activity, voice, and Codex workflow concepts.
-- Prefer refactoring over duplicate routes or parallel systems.
-- Use plain English labels in user-facing UI.
-- Mark unverified runtime features as pending or future.
-- Do not commit secrets, .env files, Obsidian private notes, generated browser screenshots with sensitive content, or local machine credentials.
+Do not delete or break:
+
+- Hermes.
+- Browser Operations.
+- Memory Nexus.
+- Entity Graph.
+- Obsidian integration.
+- Telegram integration concepts and runtime awareness.
+- Guardians and Agents.
+- Activity.
+- Projects.
+- Existing integrations.
+
+## Development Workflow
+
+1. Create a focused branch.
+2. Keep changes scoped.
+3. Prefer refactoring over duplicate V2, New, Final, or Backup component chains.
+4. Run validation before committing.
+5. Document user-facing changes.
+
+## Setup
+
+Run npm install, then npm run dev, and open http://localhost:3003.
 
 ## Validation
 
-Run:
+Run npx tsc --noEmit --pretty false.
 
-```bash
-npx tsc --noEmit --pretty false
-```
+When changing routes or layout, also run the dashboard and smoke-test affected pages.
 
-For UI work, boot the dashboard and verify the main routes load.
+## Documentation Standards
+
+- Use plain English labels.
+- Mark pending integrations as pending.
+- Do not claim production readiness unless verified.
+- Add screenshots only after visual verification.
+- Keep README and docs aligned with actual behavior.
+
+## Security Standards
+
+- Never commit secrets.
+- Never expose raw environment values in API responses.
+- Keep .env.local local.
+- Redact logs before saving to Obsidian or docs.
+
+## Pull Request Checklist
+
+- Scope is clear.
+- Core systems are preserved.
+- TypeScript passes.
+- Affected routes were smoke-tested.
+- Documentation updated if behavior changed.
+- No secrets or private local data included.
