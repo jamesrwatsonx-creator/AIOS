@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --obsidian: #050505;
+  --deep-brown: #1a120b;
+  --burnt-bronze: #6b4423;
+  --gold: #d4a64a;
+  --solar-amber: #ffac02;
+  --warm-glow: #ffbd3859;
+  --soft-sand: #c8b28a;
+  --ivory: #f5f1e8;
+  --emerald: #355c52;
+  --nile-blue: #1aa7b8;
+  --lunar-blue: #10243a;
+  --z-background: 0;
+  --z-chamber: 10;
+  --z-sticky-nav: 30;
+  --z-floating: 40;
+  --z-dropdown: 70;
+  --z-overlay: 80;
+  --z-modal: 90;
+  --z-toast: 100;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--obsidian);
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  color: var(--ivory);
+  background:
+    radial-gradient(circle at 18% 0%, rgba(212, 166, 74, 0.12), transparent 28rem),
+    radial-gradient(circle at 100% 10%, rgba(26, 167, 184, 0.09), transparent 24rem),
+    linear-gradient(140deg, #050505 0%, #0b0806 48%, #120d08 100%);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.sacred-panel {
+  position: relative;
+  z-index: var(--z-chamber);
+  border: 1px solid rgba(212, 166, 74, 0.24);
+  background:
+    linear-gradient(135deg, rgba(245, 241, 232, 0.045), rgba(212, 166, 74, 0.035)),
+    rgba(9, 8, 7, 0.72);
+  box-shadow: 0 0 0 1px rgba(255, 189, 56, 0.05), 0 26px 90px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(18px);
+}
+
+.gold-circuit {
+  background-image:
+    linear-gradient(rgba(212, 166, 74, 0.09) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 166, 74, 0.07) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.text-balance-safe {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.layer-background {
+  z-index: var(--z-background);
+}
+
+.layer-chamber {
+  z-index: var(--z-chamber);
+}
+
+.layer-sticky-nav {
+  z-index: var(--z-sticky-nav);
+}
+
+.layer-floating {
+  z-index: var(--z-floating);
+}
+
+.layer-dropdown {
+  z-index: var(--z-dropdown);
+}
+
+.layer-overlay {
+  z-index: var(--z-overlay);
+}
+
+.layer-modal {
+  z-index: var(--z-modal);
+}
+
+.layer-toast {
+  z-index: var(--z-toast);
+}
